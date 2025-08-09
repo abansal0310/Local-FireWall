@@ -639,3 +639,28 @@
 2025-08-04 03:40:58,396 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
 2025-08-04 03:41:04,407 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
 2025-08-04 03:41:04,408 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-09 19:45:37,168 - FirewallIDS - [32mINFO[0m - info:81 - Firewall IDS System initialized
+2025-08-09 19:45:37,169 - FirewallIDS - [32mINFO[0m - info:81 - Initializing system components...
+2025-08-09 19:45:37,187 - FirewallIDS - [32mINFO[0m - info:81 - Database tables initialized successfully
+2025-08-09 19:45:37,187 - FirewallIDS - [32mINFO[0m - info:81 - DatabaseManager initialized with database: D:\FIREWALL_PROJ\Local-FireWall\data\firewall_ids.db
+2025-08-09 19:45:37,207 - FirewallIDS - [32mINFO[0m - info:81 - Loaded 2 firewall rules
+2025-08-09 19:45:37,208 - FirewallIDS - [32mINFO[0m - info:81 - FirewallManager initialized
+2025-08-09 19:45:37,235 - FirewallIDS - [32mINFO[0m - info:81 - Loaded threat intelligence: 5 IPs, 5 domains
+2025-08-09 19:45:37,249 - FirewallIDS - [32mINFO[0m - info:81 - Loaded 8 correlation rules
+2025-08-09 19:45:37,260 - FirewallIDS - [32mINFO[0m - info:81 - Baseline metrics initialized
+2025-08-09 19:45:37,261 - FirewallIDS - [32mINFO[0m - info:81 - IDSEngine initialized
+2025-08-09 19:45:37,264 - FirewallIDS - [32mINFO[0m - info:81 - PacketAnalyzer initialized
+2025-08-09 19:45:37,266 - FirewallIDS - [32mINFO[0m - info:81 - PacketAnalyzer initialized
+2025-08-09 19:45:37,266 - FirewallIDS - [32mINFO[0m - info:81 - TrafficMonitor initialized for interface: en0
+2025-08-09 19:45:37,266 - FirewallIDS - [32mINFO[0m - info:81 - LogMonitor initialized
+2025-08-09 19:45:37,266 - FirewallIDS - [32mINFO[0m - info:81 - ResourceMonitor initialized
+2025-08-09 19:45:37,268 - FirewallIDS - [32mINFO[0m - info:81 - PortScanDetector initialized
+2025-08-09 19:45:37,268 - FirewallIDS - [32mINFO[0m - info:81 - FloodDetector initialized
+2025-08-09 19:45:37,269 - FirewallIDS - [32mINFO[0m - info:81 - BruteForceDetector initialized
+2025-08-09 19:45:37,283 - FirewallIDS - [32mINFO[0m - info:81 - NotificationManager initialized
+2025-08-09 19:45:37,300 - FirewallIDS - [32mINFO[0m - info:81 - AutoResponseSystem initialized
+2025-08-09 19:45:37,311 - FirewallIDS - [32mINFO[0m - info:81 - ManualReviewInterface initialized
+2025-08-09 19:45:37,312 - FirewallIDS - [32mINFO[0m - info:81 - NotificationManager initialized
+2025-08-09 19:45:37,324 - FirewallIDS - [32mINFO[0m - info:81 - ResponseActionFramework initialized
+2025-08-09 19:45:37,329 - FirewallIDS - [31mERROR[0m - error:89 - Failed to initialize components: module 'os' has no attribute 'geteuid'
+2025-08-09 19:45:37,329 - FirewallIDS - [31mERROR[0m - error:89 - Failed to initialize system
