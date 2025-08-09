@@ -508,3 +508,134 @@
 2025-08-04 03:31:19,726 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Statistics test passed
 2025-08-04 03:31:19,726 - FirewallIDS - [32mINFO[0m - info:81 - All tests passed!
 2025-08-04 03:31:19,726 - FirewallIDS - [32mINFO[0m - info:81 - All tests passed!
+2025-08-04 03:38:53,392 - FirewallIDS - [32mINFO[0m - info:81 - Firewall IDS System initialized
+2025-08-04 03:38:53,392 - FirewallIDS - [32mINFO[0m - info:81 - Initializing system components...
+2025-08-04 03:38:53,394 - FirewallIDS - [32mINFO[0m - info:81 - Database tables initialized successfully
+2025-08-04 03:38:53,394 - FirewallIDS - [32mINFO[0m - info:81 - DatabaseManager initialized with database: /Users/akshitbansal/development/firewall_ids_system/data/firewall_ids.db
+2025-08-04 03:38:53,394 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Database manager initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - Loaded 2 firewall rules
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - FirewallManager initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Firewall manager initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - Loaded threat intelligence: 5 IPs, 5 domains
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - Loaded 8 correlation rules
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - Baseline metrics initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - IDSEngine initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - ✓ IDS engine initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - PacketAnalyzer initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Packet analyzer initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - PacketAnalyzer initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - TrafficMonitor initialized for interface: eth0
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - LogMonitor initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - ResourceMonitor initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Monitors initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - PortScanDetector initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - FloodDetector initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - BruteForceDetector initialized
+2025-08-04 03:38:53,395 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Detectors initialized
+2025-08-04 03:38:53,396 - FirewallIDS - [32mINFO[0m - info:81 - NotificationManager initialized
+2025-08-04 03:38:53,396 - FirewallIDS - [32mINFO[0m - info:81 - AutoResponseSystem initialized
+2025-08-04 03:38:53,396 - FirewallIDS - [32mINFO[0m - info:81 - ManualReviewInterface initialized
+2025-08-04 03:38:53,396 - FirewallIDS - [32mINFO[0m - info:81 - NotificationManager initialized
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - ResponseActionFramework initialized
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Response framework initialized
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Loaded 2 firewall rules
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Loaded 3 IDS rules
+2025-08-04 03:38:53,397 - FirewallIDS - [33mWARNING[0m - warning:85 - Not running as root - some features may not work
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Available network interfaces: ['lo0', 'en0', 'ipsec0', 'anpi1', 'anpi0', 'en3', 'en4', 'en1', 'en2', 'bridge0', 'ap1', 'awdl0', 'llw0', 'utun0', 'utun1', 'utun2', 'utun3', 'utun4', 'utun5', 'utun6', 'utun7']
+2025-08-04 03:38:53,397 - FirewallIDS - [33mWARNING[0m - warning:85 - Configured interface eth0 not found
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Accessible log files: []
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - All components initialized successfully
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - Starting Firewall IDS System...
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - Starting monitoring systems...
+2025-08-04 03:38:53,397 - FirewallIDS - [31mERROR[0m - error:89 - Interface eth0 not found. Available: ['lo0', 'gif0', 'stf0', 'anpi1', 'anpi0', 'en3', 'en4', 'en1', 'en2', 'bridge0', 'utun0', 'utun1', 'ap1', 'en0', 'awdl0', 'llw0', 'utun2', 'utun3', 'utun4', 'utun5', 'utun6', 'utun7', 'ipsec0']
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - Traffic monitoring started
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - Monitoring all interfaces
+2025-08-04 03:38:53,397 - FirewallIDS - [32mINFO[0m - info:81 - Starting packet capture on interface: all
+2025-08-04 03:38:53,397 - FirewallIDS - [31mERROR[0m - error:89 - Error in monitoring loop: Permission denied: could not open /dev/bpf0. Make sure to be running Scapy as root ! (sudo)
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Log monitoring started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Resource monitoring started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - ✓ All monitors started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Action processor started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Action scheduler started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Response action framework started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Response framework started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Detection loop started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Statistics loop started
+2025-08-04 03:38:53,398 - FirewallIDS - [32mINFO[0m - info:81 - Detection and statistics threads started
+2025-08-04 03:38:54,401 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:38:54,402 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:00,411 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:00,412 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:06,423 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:06,424 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:12,433 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:12,434 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:18,429 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:18,430 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:24,430 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:24,430 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:30,430 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:30,430 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:39:36,436 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:39:36,436 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:40:39,352 - FirewallIDS - [32mINFO[0m - info:81 - Firewall IDS System initialized
+2025-08-04 03:40:39,352 - FirewallIDS - [32mINFO[0m - info:81 - Initializing system components...
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - Database tables initialized successfully
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - DatabaseManager initialized with database: /Users/akshitbansal/development/firewall_ids_system/data/firewall_ids.db
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Database manager initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - Loaded 2 firewall rules
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - FirewallManager initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Firewall manager initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - Loaded threat intelligence: 5 IPs, 5 domains
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - Loaded 8 correlation rules
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - Baseline metrics initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - IDSEngine initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - ✓ IDS engine initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - PacketAnalyzer initialized
+2025-08-04 03:40:39,353 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Packet analyzer initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - PacketAnalyzer initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - TrafficMonitor initialized for interface: en0
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - LogMonitor initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - ResourceMonitor initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Monitors initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - PortScanDetector initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - FloodDetector initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - BruteForceDetector initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Detectors initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - NotificationManager initialized
+2025-08-04 03:40:39,354 - FirewallIDS - [32mINFO[0m - info:81 - AutoResponseSystem initialized
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ManualReviewInterface initialized
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - NotificationManager initialized
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ResponseActionFramework initialized
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Response framework initialized
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Loaded 2 firewall rules
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Loaded 3 IDS rules
+2025-08-04 03:40:39,355 - FirewallIDS - [33mWARNING[0m - warning:85 - Not running as root - some features may not work
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Available network interfaces: ['lo0', 'en0', 'ipsec0', 'anpi1', 'anpi0', 'en3', 'en4', 'en1', 'en2', 'bridge0', 'ap1', 'awdl0', 'llw0', 'utun0', 'utun1', 'utun2', 'utun3', 'utun4', 'utun5', 'utun6', 'utun7']
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Accessible log files: []
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - All components initialized successfully
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - Starting Firewall IDS System...
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - Starting monitoring systems...
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - Starting packet capture on interface: en0
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - Traffic monitoring started
+2025-08-04 03:40:39,355 - FirewallIDS - [31mERROR[0m - error:89 - Error in monitoring loop: Permission denied: could not open /dev/bpf0. Make sure to be running Scapy as root ! (sudo)
+2025-08-04 03:40:39,355 - FirewallIDS - [32mINFO[0m - info:81 - Log monitoring started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Resource monitoring started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - ✓ All monitors started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Action processor started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Action scheduler started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Response action framework started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - ✓ Response framework started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Detection loop started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Statistics loop started
+2025-08-04 03:40:39,356 - FirewallIDS - [32mINFO[0m - info:81 - Detection and statistics threads started
+2025-08-04 03:40:40,360 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:40:40,361 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:40:46,373 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:40:46,374 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:40:52,386 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:40:52,386 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:40:58,395 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:40:58,396 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
+2025-08-04 03:41:04,407 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk7s1: 96.8%
+2025-08-04 03:41:04,408 - FirewallIDS - [31mERROR[0m - None:0 - [HIGH_DISK_USAGE] High disk usage on /dev/disk9s1: 97.2%
