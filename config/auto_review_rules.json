@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Low severity internal traffic auto-approval",
+    "conditions": {
+      "severity": "low",
+      "src_ip_internal": true
+    },
+    "decision": "false_positive"
+  },
+  {
+    "name": "Known good IP auto-approval",
+    "conditions": {
+      "src_ip_pattern": "^(8\\.8\\.8\\.8|1\\.1\\.1\\.1|208\\.67\\.222\\.222)$"
+    },
+    "decision": "false_positive"
+  },
+  {
+    "name": "Repeated low severity from same IP",
+    "conditions": {
+      "severity": "low",
+      "repeat_count": ">5"
+    },
+    "decision": "needs_escalation"
+  }
+]

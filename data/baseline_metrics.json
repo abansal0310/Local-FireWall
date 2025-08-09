@@ -1,0 +1,8 @@
+{
+  "normal_traffic_rate": 100,
+  "normal_connection_rate": 50,
+  "normal_error_rate": 0.1,
+  "normal_auth_failures": 2,
+  "normal_port_scans": 0,
+  "updated_at": "2025-08-04T03:21:35.447596"
+}

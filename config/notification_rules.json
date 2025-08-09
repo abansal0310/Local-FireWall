@@ -1,0 +1,40 @@
+[
+  {
+    "name": "High severity port scan immediate block",
+    "conditions": {
+      "severity": "high",
+      "threat_type": "port_scan"
+    },
+    "methods": ["email", "slack", "webhook", "sms"]
+  },
+  {
+    "name": "Critical threat immediate escalation",
+    "conditions": {
+      "severity": "critical"
+    },
+    "methods": ["email", "slack", "webhook", "sms"]
+  },
+  {
+    "name": "Brute force attack alerts",
+    "conditions": {
+      "threat_type": "brute_force"
+    },
+    "methods": ["email", "slack", "webhook"]
+  },
+  {
+    "name": "Internal network low priority",
+    "conditions": {
+      "src_ip_pattern": "^(192\\.168\\.|10\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.).*",
+      "severity": "low"
+    },
+    "methods": ["webhook"]
+  },
+  {
+    "name": "Flood detection immediate response",
+    "conditions": {
+      "threat_type": "flood",
+      "severity": "high"
+    },
+    "methods": ["email", "slack", "webhook"]
+  }
+]

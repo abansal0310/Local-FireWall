@@ -1,0 +1,163 @@
+{
+  "malicious_ips": [
+    "192.168.1.666",
+    "10.0.0.255", 
+    "172.16.0.666",
+    "203.0.113.1",
+    "198.51.100.1"
+  ],
+  "suspicious_domains": [
+    "malware.example.com",
+    "phishing.test.com",
+    "c2.malicious.net",
+    "botnet.evil.org",
+    "trojan.bad.site"
+  ],
+  "signatures": {
+    "sql_injection": [
+      "'.*union.*select",
+      "'.*or.*1=1", 
+      "'.*drop.*table",
+      "'.*insert.*into",
+      "'.*delete.*from",
+      "\\\\x27.*union",
+      "\\\\x27.*or.*\\\\x27"
+    ],
+    "xss_attack": [
+      "<script.*>.*</script>",
+      "javascript:",
+      "onerror.*=",
+      "onload.*=",
+      "document\\.cookie",
+      "eval\\\\(",
+      "alert\\\\("
+    ],
+    "lfi_attack": [
+      "\\.\\./",
+      "passwd",
+      "etc/shadow",
+      "boot\\.ini",
+      "windows/system32",
+      "proc/self/environ"
+    ],
+    "code_injection": [
+      "system\\\\(",
+      "exec\\\\(",
+      "eval\\\\(",
+      "passthru\\\\(",
+      "shell_exec\\\\(",
+      "base64_decode\\\\(",
+      "file_get_contents\\\\("
+    ],
+    "directory_traversal": [
+      "\\.\\./\\.\\./",
+      "\\\\\\\\.\\\\\\\\.\\\\",
+      "%2e%2e%2f",
+      "%252e%252e%252f",
+      "..\\\\\\\\",
+      "..%5c"
+    ],
+    "command_injection": [
+      ";.*cat.*",
+      ";.*ls.*",
+      ";.*id.*", 
+      ";.*whoami.*",
+      ";.*nc.*",
+      "\\\\|.*cat.*",
+      "\\\\|.*ls.*",
+      "&.*cat.*"
+    ]
+  },
+  "patterns": {
+    "reconnaissance": {
+      "description": "Reconnaissance patterns",
+      "indicators": [
+        "port_scan",
+        "vulnerability_scan", 
+        "dns_enumeration",
+        "banner_grabbing",
+        "directory_bruteforce"
+      ]
+    },
+    "exploitation": {
+      "description": "Exploitation patterns",
+      "indicators": [
+        "sql_injection",
+        "xss_attack",
+        "code_injection",
+        "buffer_overflow",
+        "privilege_escalation"
+      ]
+    },
+    "persistence": {
+      "description": "Persistence establishment patterns", 
+      "indicators": [
+        "backdoor_install",
+        "scheduled_task_creation",
+        "registry_modification",
+        "startup_modification",
+        "service_installation"
+      ]
+    },
+    "lateral_movement": {
+      "description": "Lateral movement patterns",
+      "indicators": [
+        "credential_dump",
+        "pass_the_hash",
+        "remote_access",
+        "network_share_access",
+        "privilege_escalation"
+      ]
+    },
+    "exfiltration": {
+      "description": "Data exfiltration patterns",
+      "indicators": [
+        "large_data_transfer",
+        "compression_activity", 
+        "external_connections",
+        "ftp_upload",
+        "http_post_large"
+      ]
+    },
+    "command_control": {
+      "description": "Command and control patterns",
+      "indicators": [
+        "beacon_traffic",
+        "periodic_connections",
+        "dns_tunneling",
+        "encrypted_traffic",
+        "unusual_ports"
+      ]
+    }
+  },
+  "threat_feeds": {
+    "reputation_services": [
+      {
+        "name": "internal_blacklist",
+        "type": "ip_list",
+        "confidence": 0.9,
+        "last_updated": "2024-12-19T00:00:00Z"
+      },
+      {
+        "name": "domain_blacklist", 
+        "type": "domain_list",
+        "confidence": 0.8,
+        "last_updated": "2024-12-19T00:00:00Z"
+      }
+    ],
+    "ioc_feeds": [
+      {
+        "name": "malware_hashes",
+        "type": "hash_list",
+        "confidence": 0.95,
+        "last_updated": "2024-12-19T00:00:00Z"
+      }
+    ]
+  },
+  "metadata": {
+    "version": "1.0",
+    "created": "2024-12-19T00:00:00Z",
+    "last_updated": "2024-12-19T00:00:00Z",
+    "description": "Threat intelligence data for Firewall IDS System"
+  }
+}

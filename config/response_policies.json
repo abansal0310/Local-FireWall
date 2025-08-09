@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Critical threat immediate response",
+    "conditions": {
+      "severity": "critical"
+    },
+    "actions": [
+      {
+        "type": "block_ip",
+        "duration": 86400,
+        "immediate": true
+      },
+      {
+        "type": "notification",
+        "methods": ["email", "slack", "sms"],
+        "immediate": true
+      },
+      {
+        "type": "manual_review",
+        "priority": "critical",
+        "immediate": true
+      }
+    ]
+  },
+  {
+    "name": "Port scan high severity response",
+    "conditions": {
+      "type": "port_scan",
+      "severity": "high"
+    },
+    "actions": [
+      {
+        "type": "block_ip",
+        "duration": 3600,
+        "immediate": true
+      },
+      {
+        "type": "notification",
+        "methods": ["email", "slack"],
+        "immediate": true
+      },
+      {
+        "type": "manual_review",
+        "priority": "high",
+        "delay": 300
+      }
+    ]
+  },
+  {
+    "name": "Brute force attack response",
+    "conditions": {
+      "type": "brute_force"
+    },
+    "actions": [
+      {
+        "type": "rate_limit",
+        "rate": 5,
+        "duration": 1800,
+        "immediate": true
+      },
+      {
+        "type": "notification",
+        "methods": ["email", "webhook"],
+        "immediate": true
+      },
+      {
+        "type": "manual_review",
+        "priority": "medium",
+        "delay": 600
+      }
+    ]
+  },
+  {
+    "name": "Flood attack response",
+    "conditions": {
+      "type": "flood",
+      "severity": "high"
+    },
+    "actions": [
+      {
+        "type": "rate_limit",
+        "rate": 10,
+        "duration": 900,
+        "immediate": true
+      },
+      {
+        "type": "notification",
+        "methods": ["email", "slack"],
+        "immediate": true
+      }
+    ]
+  },
+  {
+    "name": "Internal network low severity",
+    "conditions": {
+      "src_ip_pattern": "^(192\\.168\\.|10\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.).*",
+      "severity": "low"
+    },
+    "actions": [
+      {
+        "type": "notification",
+        "methods": ["webhook"],
+        "immediate": true
+      }
+    ]
+  }
+]

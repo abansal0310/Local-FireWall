@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Block known attack IPs",
+    "threat_type": "any",
+    "severity": "critical",
+    "src_ip_pattern": ".*",
+    "action": {
+      "type": "permanent_block",
+      "duration": 0
+    }
+  },
+  {
+    "name": "Rate limit brute force",
+    "threat_type": "brute_force",
+    "severity": "high",
+    "action": {
+      "type": "temp_block",
+      "duration": 3600
+    }
+  },
+  {
+    "name": "Quarantine suspicious activity",
+    "threat_type": "port_scan", 
+    "severity": "medium",
+    "action": {
+      "type": "quarantine",
+      "duration": 1800
+    }
+  }
+]

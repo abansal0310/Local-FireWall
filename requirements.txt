@@ -1,0 +1,8 @@
+scapy>=2.4.5
+psutil>=5.8.0
+python-nmap>=0.7.1
+iptc>=0.13.1
+watchdog>=2.1.6
+colorama>=0.4.4
+tabulate>=0.8.9
+requests>=2.25.1

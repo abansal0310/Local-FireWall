@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Brute Force Detection",
+    "conditions": [
+      {
+        "event_type": "auth_failure",
+        "count": 5,
+        "window": 300,
+        "field_match": "source_ip"
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "high",
+    "description": "Multiple authentication failures detected from same source"
+  },
+  {
+    "name": "Port Scan Detection", 
+    "conditions": [
+      {
+        "event_type": "port_scan",
+        "unique_ports": 10,
+        "window": 60,
+        "field_match": "source_ip"
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "medium",
+    "description": "Port scanning activity detected"
+  },
+  {
+    "name": "DDoS Detection",
+    "conditions": [
+      {
+        "event_type": "flood_detection", 
+        "count": 100,
+        "window": 60,
+        "field_match": "source_ip"
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "critical",
+    "description": "DDoS attack detected"
+  },
+  {
+    "name": "Attack Chain - Recon to Exploit",
+    "conditions": [
+      {
+        "event_type": "port_scan",
+        "window": 3600,
+        "field_match": "source_ip"
+      },
+      {
+        "event_type": "vulnerability_scan",
+        "window": 1800,
+        "field_match": "source_ip" 
+      },
+      {
+        "event_type": "exploit_attempt",
+        "window": 600,
+        "field_match": "source_ip"
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "critical",
+    "description": "Multi-stage attack chain detected"
+  },
+  {
+    "name": "Suspicious Login Pattern",
+    "conditions": [
+      {
+        "event_type": "auth_success",
+        "field_match": "source_ip",
+        "window": 1800
+      },
+      {
+        "event_type": "auth_failure", 
+        "count": 3,
+        "field_match": "source_ip",
+        "window": 300
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "medium",
+    "description": "Suspicious authentication pattern detected"
+  },
+  {
+    "name": "High Volume Traffic",
+    "conditions": [
+      {
+        "event_type": "traffic_volume",
+        "threshold": 1000,
+        "window": 60,
+        "field_match": "source_ip"
+      }
+    ],
+    "action": "generate_alert", 
+    "severity": "medium",
+    "description": "High volume traffic detected from single source"
+  },
+  {
+    "name": "Malware Communication",
+    "conditions": [
+      {
+        "event_type": "dns_query",
+        "field_match": "query_domain",
+        "blacklist_check": true,
+        "window": 300
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "high", 
+    "description": "Communication with known malicious domain detected"
+  },
+  {
+    "name": "Data Exfiltration Pattern",
+    "conditions": [
+      {
+        "event_type": "large_upload",
+        "size_threshold": 10485760,
+        "window": 600,
+        "field_match": "source_ip"
+      },
+      {
+        "event_type": "external_connection",
+        "port_range": [80, 443],
+        "window": 300,
+        "field_match": "source_ip"
+      }
+    ],
+    "action": "generate_alert",
+    "severity": "critical",
+    "description": "Potential data exfiltration detected"
+  }
+]

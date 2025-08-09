@@ -1,0 +1,61 @@
+{
+  "firewall_rules": [
+    {
+      "rule_id": "FR001",
+      "description": "Block common attack ports",
+      "action": "DROP",
+      "protocol": "tcp",
+      "ports": [135, 139, 445, 1433, 3389],
+      "source": "any",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "rule_id": "FR002", 
+      "description": "Allow SSH from trusted networks",
+      "action": "ACCEPT",
+      "protocol": "tcp",
+      "ports": [22],
+      "source": "192.168.1.0/24",
+      "enabled": true,
+      "priority": 2
+    }
+  ],
+  "ids_rules": [
+    {
+      "rule_id": "IDS001",
+      "description": "Port scan detection",
+      "type": "port_scan",
+      "threshold": 10,
+      "time_window": 60,
+      "action": "block",
+      "severity": "medium",
+      "enabled": true
+    },
+    {
+      "rule_id": "IDS002",
+      "description": "SYN flood detection",
+      "type": "syn_flood",
+      "threshold": 100,
+      "time_window": 10,
+      "action": "block",
+      "severity": "high",
+      "enabled": true
+    },
+    {
+      "rule_id": "IDS003",
+      "description": "Brute force detection",
+      "type": "brute_force",
+      "threshold": 5,
+      "time_window": 300,
+      "action": "block",
+      "severity": "high",
+      "enabled": true
+    }
+  ],
+  "whitelist": [
+    "127.0.0.1",
+    "192.168.1.1"
+  ],
+  "blacklist": []
+}
